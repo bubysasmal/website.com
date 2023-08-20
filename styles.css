@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+.sasmal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+.logo:hover{
+    color: rgb(236, 255, 30);
+}
+.navbar a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+    margin-left: 1.6rem;
+    font-weight: 400;
+    transition: .22s;  
+}
+.navbar a:hover,
+.navbar a.active{
+    color:whitesmoke;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+.home-contains h1{
+    color: #00abf0;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.8;    
+}
+.home-contains h1 span{
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    
+}
+.animation{
+    position: relative;
+    width: 30rem;
+}
+.animation h2{
+    font-size: 3.3rem;
+    color: transparent;
+    font-weight: 550;
+    -webkit-text-stroke: .7px var(--main-color);
+    line-height: 1.2;
+}
+.home-contains p{
+    color: antiquewhite;
+    font-size: 1.4rem;
+    font-weight: 200; 
+    margin: 1% 0;
+}
+.button-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 4rem;
+}
+.button-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 90%;
+    font-size: 1.3rem;
+    background: var(--main-color);
+    border-radius: 15px;
+    border: 1.2rem solid var(--main-color);
+    font-weight: 652;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    margin-top: 2rem;
+}
+.button-box a:hover,
+.button-box a.btn{
+    color: azure;
+    transition: .22s;
+}
+.icon {
+    position: absolute;
+    bottom: 4rem;
+    width: 178px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: .5rem solid var(--main-color);
+    border-radius: 40%;
+    background-color: #00abf0;
+}
+.icon a i{
+    color: black;
+    font-size: 19px;
+}
+.icon a i:hover{
+    color:whitesmoke;
+}
+.is img{
+    float: right;
+    width: 80%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    transition: .9s;
+}   
+.is img:hover{
+    color: var(--bg-color);
+    opacity: .2;
+}
